@@ -1,82 +1,189 @@
-
-<DOCTYPE!html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>
-</title>
 <style>
- a {
-     display:block;
-     padding: 15px;
-    background-color: #dddddd;
-	text-decoration: none;
+.h1 {
 	
- }
+}	
 
- .active {
-    background-color: #228B22;
-    color: white;
+a {
+	font-family: 'Barlow', Helvetica, sans-serif;
 }
-li a:hover {
-    background-color: #555;
-    color: white;
+
+html {
+	background-image: url("images/background.jpg");
+}
+table, td, tr {
+	border: 1px solid black;
+	font-family: 'Barlow', Helvetica, sans-serif;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 </style>
+<title>HTML-CSS</title>
+<link rel="shortcut icon" type="image/png" href="images/Favicon.png"/>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
 <body>
-<div style=" color: #FDFDFD; background-color: #2196F3; border: #000000 5px solid">
-  <img src="images/slss.png" class="image" alt="slss" height="200" width="200" style="clear:left;padding-left:20px;padding-top:20px;margin-right:300px;display:inline;"/>
-  <h1 style="display:inline;">Unit </h1>
-  <ul>
-  <li><a href="home.html">Home</a></li>
-  <li><a href="career.html">Career</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a class="active" href="unit.html">Unit</a></li>
-</ul></div>
-<h1>HTML</h1>
-<p>
-ML stands for HyperText Markup Language and is used to create the structure and content of a webpage.
-Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
-HTML elements can be nested inside other elements. The enclosed element is the child of the enclosing parent element.
-Any visible content should be placed within the opening and closing <body> tags .
-Headings and sub-headings, <h1> to <h6>tags, are used to enlarge text.
-<p>, <span> and <div> tags specify text or blocks.
-The <em> and <strong> tags are used to emphasize text.
-Line breaks are created with the <br> tag.
-Ordered lists (<ol>) are numbered and unordered lists (<ul>) are bulleted.
-Images (<img>) and videos (<video>) can be added by linking to an existing source.</p>
-<h1>CSS</h1>
-CSS declarations are structured into property and value pairs.
-The font-family property defines the typeface of an element.
-font-size controls the size of text displayed.
-font-weight defines how thin or thick text is displayed.
-The text-align property places text in the left, right, or center of its parent container.
-Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.
-CSS can make an element transparent with the opacity property.-(0-1)
-CSS can also set the background of an element to an image with the background-image property
-
-CSS DISPLAY AND POSITIONING
-In this lesson, you will learn five properties for adjusting the position of HTML elements in the browser:
-position
-display
-z-index
-float
-Clear
-The default position of an element can be changed by setting its position property. The position property can take one of four values:
-static - the default value (it does not need to be specified)
-relative
-absolute
-fixed
-position property to relative.
-This value allows you to position an element relative to its default static position on the web page.
-.box-bottom {
-  background-color: DeepSkyBlue;
-  position: relative;
-}
-
-
-
+<!--Navigation Bar-->
+<div class="borders">
+<a href="index.html"><img class="center" src="images/Stephen_lewis_secondary_school.png" alt="Home" height="150px" width="500px"></a>
+<a href="index.html" class="button button-primary">Home</a>
+<a href="about.html" class="button button-primary">About</a>
+<a href="career.html" class="button button-primary">Career</a>
+<a href="contact.html" class="button button-primary">Contact</a>
+<a href="html-css.html" class="button button-primary">HTML-CSS</a>
+<br>
+<br>
+<br>
+<table>
+	<tr>
+		<th>Tags Used (HTML)</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>!DOCTYPE</td>
+		<td>Defines the document type</td>
+	</tr>
+	<tr>
+		<td>a</td>
+		<td>Defines a hyperlink</td>
+	</tr>	
+	<tr>
+		<td>b</td>
+		<td>Defines bold text</td>
+	</tr>
+	<tr>
+		<td>br</td>
+		<td>Defines a break within the text</td>
+	</tr>
+	<tr>
+		<td>body</td>
+		<td>Defines the body element</td>
+	</tr>
+	<tr>
+		<td>div</td>
+		<td>Defines a section in a document</td>
+	</tr>
+	<tr>
+		<td>form</td>
+		<td>Defines a form</td>
+	</tr>
+	<tr>
+		<td>h1 through h6</td>
+		<td>Defines header 1 to header 6</td>
+	</tr>
+	<tr>
+		<td>head</td>
+		<td>Defines information about the document</td>
+	</tr>
+	<tr>
+		<td>html</td>
+		<td>Defines an html document</td>
+	</tr>
+	<tr>
+		<td>img</td>
+		<td>Defines an image</td>
+	</tr>
+	<tr>
+		<td>input</td>
+		<td>Defines an input field</td>
+	</tr>
+	<tr>
+		<td>li</td>
+		<td>Defines a list item</td>
+	</tr>
+	<tr>
+		<td>ol</td>
+		<td>Defines an ordered list</td>
+	</tr>
+	<tr>
+		<td>p</td>
+		<td>Defines a paragraph</td>
+	</tr>
+	<tr>
+		<td>strong</td>
+		<td>Defines strong text</td>
+	</tr>
+	<tr>
+		<td>table</td>
+		<td>Defines a table</td>
+	</tr>
+	<tr>
+		<td>td</td>
+		<td>Defines a table cell</td>
+	</tr>
+	<tr>
+		<td>th</td>
+		<td>Defines a table header</td>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td>Defines the document title</td>
+	</tr>
+	<tr>
+		<td>tr</td>
+		<td>Defines a table rows</td>
+	</tr>
+	<tr>
+		<td>ul</td>
+		<td>Defines an unordered list</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>Tags Used (CSS)</th>
+		<th>Description</th>
+	</tr>	
+	<tr>
+		<td>background-color</td>
+		<td>Defines the background colour</td>
+	</tr>
+	<tr>
+		<td>background-image</td>
+		<td>Defines the background image</td>
+	</tr>
+	<tr>
+		<td>border</td>
+		<td>Defines the border</td>
+	</tr>
+	<tr>
+		<td>color</td>
+		<td>Defines the color</td>
+	</tr>
+	<tr>
+		<td>font-family</td>
+		<td>Defines the font</td>
+	</tr>
+	<tr>
+		<td>font-size</td>
+		<td>Defines the size of the font</td>
+	</tr>
+	<tr>
+		<td>font-style</td>
+		<td>Defines the style of the font</td>
+	</tr>
+	<tr>
+		<td>font-weight</td>
+		<td>Defines how thick or thin the font is</td>
+	</tr>
+	<tr>
+		<td>margin</td>
+		<td>Defines the margins of an element</td>
+	</tr>
+	<tr>
+		<td>padding</td>
+		<td>Defines the space between content</td>
+	</tr>
+	<tr>
+		<td>text-align</td>
+		<td>Defines the alignment of the text</td>
+	</tr>
+</table>
 </body>
 </html>
